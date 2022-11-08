@@ -13,6 +13,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - name: "printing"
+        run: ls
       - name: "Login to Docker hub"
         run: docker login --username ${{ secrets.USERNAME }} --password ${{ secrets.PASSWORD }}
       - name: "Building docker image"
