@@ -1,11 +1,8 @@
 FROM alpine
 WORKDIR /mohamed
 
-COPY test.js .
-RUN javascriptc test.js
+COPY ahmed.java .
+RUN javac ahmed.java
 
-RUN apk add --update nodejs
-RUN apk add --update npm
-RUN npm install express
-CMD node test.js
+CMD java ahmed
 
