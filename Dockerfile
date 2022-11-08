@@ -1,4 +1,4 @@
-FROM alpine
+FROM openjdk
 WORKDIR /mohamed
 
 COPY ahmed.java .
