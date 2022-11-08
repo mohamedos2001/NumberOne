@@ -16,5 +16,11 @@ jobs:
       - name: 'Testing Github action'
         run: pwd
 
-      - name: 'Testing printing'
-        run: echo Mohamed
+      - name: 'After'
+        run: ls
+
+      - uses: action/checkout@v3
+
+      - name: 'Before'
+        run: ls
+  
